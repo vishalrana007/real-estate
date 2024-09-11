@@ -1,0 +1,157 @@
+.footer {
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo {
+  height: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  line-height: 2;
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.logo h3 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.footer-middle h4, .footer-right h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin: 10px 0;
+}
+
+.footer-middle ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-right .email-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-right .email-box input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+.footer-right .email-box button {
+  padding: 10px;
+  background-color: #006eb5;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff30;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-left, .footer-middle, .footer-right {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left, .footer-middle, .footer-right {
+    margin: 10px 0;
+  }
+
+  .footer-right .email-box {
+    flex-direction: column;
+  }
+
+  .footer-right .email-box input, .footer-right .email-box button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-left p, .footer-middle ul, .footer-right .social-links {
+    font-size: 0.8rem;
+  }
+
+  .footer-right .email-box input {
+    padding: 8px;
+    width: 350px;
+  }
+
+  .footer-right .email-box button {
+    padding: 18px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}

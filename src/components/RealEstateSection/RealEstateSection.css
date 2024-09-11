@@ -1,0 +1,162 @@
+.who-we-are {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+}
+
+.who-we-are-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#image3 {
+  position: absolute;
+  width: 11vw; 
+  left: 89%; 
+  top: 320px; 
+  height: 200px;
+}
+
+.text-section {
+  flex: 1 1 40%;
+  padding: 20px;
+}
+
+.text-section h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #606060;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-cards h3 {
+  color: black;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 30px;
+  color: #1a1a1a;
+}
+
+.image-section {
+  flex: 1 1 50%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 120px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#image1 {
+  float: right;
+  height: 50vh; 
+  width: 40vw; 
+}
+
+@media (max-width: 1024px) {
+  #image3 {
+    top: 450px;
+    left: 65%;
+    width: 25vw;     height: 180px;
+  }
+
+  #image1 {
+    width: 35vw;
+    height: 45vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are-content {
+    flex-direction: column;
+  }
+
+  .image-section {
+    grid-template-columns: 1fr;
+  }
+
+  #image1 {
+    width: 90%;
+    height: 50vh;
+    float: none; 
+  }
+
+  #image3 {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: 350px; }
+}
+
+@media (max-width: 576px) {
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+
+  #image3 {
+  display: none;
+  }
+
+  #image1 {
+    width: 100%;
+    height: auto;
+  }
+}

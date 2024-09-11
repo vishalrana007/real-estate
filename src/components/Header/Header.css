@@ -1,0 +1,48 @@
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+ 
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navlink:active{
+    color: white;
+  }
+  .navlink.active{
+    color: white;
+  }
+  .nav li {
+    margin-left: 50px;
+    font-size: large;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.575);
+  }
+  
+
+  @media (max-width: 768px) {
+    .header {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .nav{
+      display: none;
+    }
+  }

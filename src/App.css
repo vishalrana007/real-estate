@@ -1,0 +1,7 @@
+body{
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #014167,#011D33);
+color: white;
+font-family: 'Helvetica Neue', sans-serif;
+z-index: 9999;
+}

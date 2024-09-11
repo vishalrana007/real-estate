@@ -1,0 +1,171 @@
+/* General Styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.hero-image {
+  position: relative;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-image-controls button {
+  background: rgb(247, 244, 244);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.hero-image-controls button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: absolute;
+  top: 110%;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature {
+  width: 20%;
+  margin: 10px;
+  z-index: 1;
+  height: 95px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.feature-text h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 1024px) {
+  .features {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .feature {
+      width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      height: auto;
+  }
+
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+
+  .hero-text p {
+      font-size: 1rem;
+  }
+
+  .features {
+      flex-direction: column;
+      position: static;
+      width: 100%;
+  }
+
+  .feature {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+      font-size: 1.5rem;
+  }
+
+  .hero-text p {
+      font-size: 0.9rem;
+  }
+
+  .hero-image-controls {
+      max-width: 150px;
+  }
+  .feature{
+    margin-left: 232px;
+
+    
+  } 
+  .feature-image img {
+      width: 40px;
+      height: 40px;
+    
+  }
+
+  .feature-text h2 {
+      font-size: 1rem;
+  }
+}
